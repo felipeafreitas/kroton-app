@@ -7,11 +7,20 @@ import Button from "react-bootstrap/Button";
 import Icon1 from "../assets/img/icon1.svg";
 import HeaderInfoCard from "./HeaderInfoCard";
 
+import infos from "../infos.json";
+
 function HeaderInfos() {
   return (
     <Container>
-      <HeaderInfoCard />
-      <HeaderInfoCard />
+      {infos.map((element) => {
+        return (
+          <HeaderInfoCard
+            img={element.img}
+            title={element.title}
+            text={element.text}
+          />
+        );
+      })}
     </Container>
   );
 }

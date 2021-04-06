@@ -8,11 +8,11 @@ import FormControl from "react-bootstrap/FormControl";
 
 function SearchInputs() {
   return (
-    <CardFlex className="shadow-sm mb-5 mt-5 bg-white rounded pl-3">
-      <Card.Body>
+    <CardFlex className="shadow-sm mb-5 mt-5 bg-white rounded p-3">
+      <Card.Body className='p-0'>
         <Card.Title className="mb-3">Titulo 3</Card.Title>
-        <div className="d-flex row flex-wrap">
-          <div className="mr-3">
+        <div className="d-flex flex-wrap align-items-center">
+          <div className="p-1 flex-fill">
             <Card.Subtitle className="mb-2 text-muted">
               Pergunta 1 ?
             </Card.Subtitle>
@@ -24,7 +24,7 @@ function SearchInputs() {
               />
             </InputGroup>
           </div>
-          <div className="mr-3">
+          <div className="p-1 flex-fill">
             <Card.Subtitle className="mb-2 text-muted">
               Pergunta 2 ?
             </Card.Subtitle>
@@ -36,7 +36,7 @@ function SearchInputs() {
               />
             </InputGroup>
           </div>
-          <div className="mr-3">
+          <div className="p-1 flex-fill">
             <Card.Subtitle className="mb-2 text-muted">
               Pergunta 3 ?
             </Card.Subtitle>
@@ -48,9 +48,11 @@ function SearchInputs() {
               />
             </InputGroup>
           </div>
-          <Button>
-            <i class="fas fa-search"></i>
-          </Button>
+          <div className='col-12 col-xl-1 p-0'>
+            <Button className='col-12'>
+              <i class="fas fa-search"></i>
+            </Button>
+          </div>
         </div>
       </Card.Body>
     </CardFlex>

@@ -20,7 +20,7 @@ function App() {
         <SearchResult />
         <div className="d-flex flex-column text-center text-warning font-weight-bold">
           <p>
-            <a>+ Carregar mais cursos</a>
+            <a href='#'>+ Carregar mais cursos</a>
           </p>
         </div>
       </Container>

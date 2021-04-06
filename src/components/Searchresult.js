@@ -29,6 +29,7 @@ export default Searchresult;
 const ContainerResults = styled.div`
   display: flex;
   flex-wrap: wrap;
+  min-height: 342px;
 
   @media (max-width: 992px) {
     display: flex;

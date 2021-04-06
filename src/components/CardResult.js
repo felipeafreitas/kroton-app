@@ -19,7 +19,8 @@ function CardResult(props) {
   );
 }
 const CardFlex = styled.div`
-  min-width: 280px;
+  min-width: 260px;
+  height: auto;
 `;
 
 export default CardResult;
