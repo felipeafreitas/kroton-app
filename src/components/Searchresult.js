@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import data from "../data.json";
-import img from "../assets/img/student.svg";
 import CardResult from "./CardResult";
 
 function Searchresult() {

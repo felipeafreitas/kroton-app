@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-
-import Icon1 from "../assets/img/icon1.svg";
 import HeaderInfoCard from "./HeaderInfoCard";
 
 import infos from "../infos.json";

@@ -3,8 +3,6 @@ import styled from "styled-components";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-import Icon1 from "../assets/img/icon1.svg";
-
 function HeaderInfoCard(props) {
   return (
     <CardFlex className="shadow-sm mt-5 bg-white rounded col-11 col-xl-6 mr-3 p-3">

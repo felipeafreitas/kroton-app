@@ -2,8 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
 
 import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 
 import SearchResult from "./components/Searchresult";
 import SearchInputs from "./components/SearchInputs";
@@ -20,7 +18,7 @@ function App() {
         <SearchResult />
         <div className="d-flex flex-column text-center text-warning font-weight-bold">
           <p>
-            <a href='#'>+ Carregar mais cursos</a>
+            <a href="/">+ Carregar mais cursos</a>
           </p>
         </div>
       </Container>
