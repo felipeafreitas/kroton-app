@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -7,11 +8,11 @@ import FormControl from "react-bootstrap/FormControl";
 
 function SearchInputs() {
   return (
-    <Card>
+    <CardFlex className="shadow-sm mb-5 mt-5 bg-white rounded pl-3">
       <Card.Body>
-        <Card.Title>Titulo 3</Card.Title>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <div>
+        <Card.Title className="mb-3">Titulo 3</Card.Title>
+        <div className="d-flex row flex-wrap">
+          <div className="mr-3">
             <Card.Subtitle className="mb-2 text-muted">
               Pergunta 1 ?
             </Card.Subtitle>
@@ -23,7 +24,7 @@ function SearchInputs() {
               />
             </InputGroup>
           </div>
-          <div>
+          <div className="mr-3">
             <Card.Subtitle className="mb-2 text-muted">
               Pergunta 2 ?
             </Card.Subtitle>
@@ -35,7 +36,7 @@ function SearchInputs() {
               />
             </InputGroup>
           </div>
-          <div>
+          <div className="mr-3">
             <Card.Subtitle className="mb-2 text-muted">
               Pergunta 3 ?
             </Card.Subtitle>
@@ -47,10 +48,15 @@ function SearchInputs() {
               />
             </InputGroup>
           </div>
+          <Button>
+            <i class="fas fa-search"></i>
+          </Button>
         </div>
       </Card.Body>
-    </Card>
+    </CardFlex>
   );
 }
+
+const CardFlex = styled.div``;
 
 export default SearchInputs;

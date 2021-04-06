@@ -1,4 +1,6 @@
 import React from "react";
+import styled from "styled-components";
+
 import data from "../data.json";
 import img from "../assets/img/student.svg";
 import CardResult from "./CardResult";
@@ -6,8 +8,8 @@ import CardResult from "./CardResult";
 function Searchresult() {
   return (
     <div>
-      <h1> Tìtulo 4</h1>
-      <div>
+      <h1> Título 4</h1>
+      <ContainerResults>
         {data.map((element) => {
           return (
             <CardResult
@@ -17,9 +19,22 @@ function Searchresult() {
             />
           );
         })}
-      </div>
+      </ContainerResults>
     </div>
   );
 }
 
 export default Searchresult;
+
+const ContainerResults = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 300px;
+    overflow-x: auto;
+    width: auto;
+  }
+`;
